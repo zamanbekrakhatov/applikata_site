@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Applikata Oqiw Orayi — Учебный центр</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="logo">
+        <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#4B1C8C;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="12" fill="url(#logoGrad)"/>
+          <text x="24" y="32" font-size="24" font-weight="800" fill="#EAEAEA" text-anchor="middle" font-family="Arial">A</text>
+        </svg>
+      </div>
+      <div>
+        <div style="font-size:15px">Applikata</div>
+        <div style="font-size:12px;color:var(--muted)">Oqiw Orayi</div>
+      </div>
+    </div>
+
+    <div class="menu" role="navigation" aria-label="main">
+      <a href="#home">Basti bet</a>
+      <a href="#courses">Kurslar</a>
+      <a href="#teachers">Ustazlar</a>
+      <a href="#reviews">Pikirler</a>
+      <a href="#about">Biz tuwrali</a>
+      <a href="#contacts">Baylanis</a>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="#contacts" class="cta">Tirkeliw</a>
+      <button class="burger" aria-label="menu" id="burger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+
+  <!-- mobile dropdown -->
+  <div id="mobileMenu" style="display:none;background:#fff;padding:12px;border-top:1px solid #f3f3fb">
+    <a href="#home" style="display:block;padding:8px 0;color:var(--muted)">Basti bet</a>
+    <a href="#courses" style="display:block;padding:8px 0;color:var(--muted)">Kurslar</a>
+    <a href="#teachers" style="display:block;padding:8px 0;color:var(--muted)">Ustazlar</a>
+    <a href="#reviews" style="display:block;padding:8px 0;color:var(--muted)">Pikirler</a>
+    <a href="#about" style="display:block;padding:8px 0;color:var(--muted)">Biz tuwrali</a>
+    <a href="#contacts" style="display:block;padding:8px 0;color:var(--muted)">Baylanis</a>
+  </div>
+</nav>
+
+  <!-- HERO / Басты бет -->
+  <header id="home" class="hero">
+    <div class="inner wrap">
+      <div>
+        <h1 class="fade-in" style="font-family:Inter,serif">Applikata Oqiw Orayi — Keleshekti birge quramiz</h1>
+        <p class="lead fade-in">Kásibiy ustazlar, praktikalıq baǵdarlamalar hám jogari nátiyjeler. Onlayn hám oflayn formatlar</p>
+        <div class="buttons">
+          <a class="btn-orange" href="#courses">Kurslar</a>
+          <a class="btn-white" href="#about">Biz tuwrali</a>
+        </div>
+        <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+          <div class="hero-card stat fade-in">
+            <div class="num">520+</div>
+            <div class="label muted">Abiturent</div>
+          </div>
+          <div class="hero-card stat fade-in">
+            <div class="num">95%</div>
+            <div class="label muted">Oquga tusti</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card fade-in" style="text-align:center">
+        <svg xmlns='http://www.w3.org/2000/svg' width='320' height='200' viewBox="0 0 320 200">
+          <rect width='100%' height='100%' rx='14' fill='#ffffff' opacity='0.06'/>
+          <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='18' fill='#EAEAEA' font-family='Arial'>Applikata — Online/offline</text>
+        </svg>
+        <p style="margin-top:10px;color:var(--light-text)">Senimli kurs — jogari natijeler</p>
+        <div style="margin-top:12px"><a class="btn-orange" href="#courses">Kurslardi koriw</a></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="wrap fade-in">
+      <h2>Ortaligimiz jayli / Biz tuwrali</h2>
+      <p class="lead">Applikata — Oqiwshilar hám abiturentler ushın bilim beriw ortalıǵı. Biz praktikalıq baǵıtqa, projektlerge hám jumısqa ornalasıwǵa komektesetin baǵdarlamalarga senemiz.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px;align-items:center">
+        <div class="fade-in">
+          <p class="muted">Maqsetimiz — háre bir talapkerdiń bilim dárejesin kóterip, joǵarı oqıw orınına túswge tiykar tayarlıq beriw. Biz qısqa waqıtta, nátiyjeli hám praktikalıq baǵıttaǵı kurslardı usınamız: matematika, fizika, informatika, til hám robototehnika.</p>
+        </div>
+        <div class="fade-in">
+          <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='360' viewBox="0 0 600 360">
+            <rect rx='12' width='100%' height='100%' fill='#f3f4ff'/>
+            <text x='50%' y='50%' fill='#6676ea' font-size='18' text-anchor='middle' dominant-baseline='middle'>Біздің аудитория</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses" class="section" style="background:linear-gradient(180deg,#fff, #fbfbff)">
+    <div class="wrap">
+      <h2>Kurslar / Courses</h2>
+      <p class="lead">Tañdap alǵan baǵıtıńız boyınsha praktikalıq hám káriyeraǵa baǵıtlánǵan kurslar.</p>
+
+      <div class="courses-grid fade-in" style="margin-top:18px">
+        <div class="course-card">
+          <div class="course-title">Matematika</div>
+          <div class="course-meta">3 ай · Бастапқы/Орташа</div>
+          <p class="muted">Алгебра, геометрия, тригонометрия — ҰБТ-ға дайындық.</p>
+          <div style="margin-top:12px" class="course-footer">
+            <div class="pill">Онлайн</div>
+            <a href="#contacts" class="cta" style="background:transparent;color:var(--accent);box-shadow:none;padding:6px 8px;border-radius:8px;border:1px solid rgba(244,123,32,0.12)">Жазылу</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-title">Fizika</div>
+          <div class="course-meta">4 ай · Орташа</div>
+          <p class="muted">Механика, термодинамика, электр — практикалық тапсырмалар.</p>
+          <div style="margin-top:12px" class="course-footer">
+            <div class="pill">Оффлайн</div>
+            <a href="#contacts" class="cta" style="background:transparent;color:var(--accent);box-shadow:none;padding:6px 8px;border-radius:8px;border:1px solid rgba(244,123,32,0.12)">Жазылу</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-title">Qaraqalpaq tili</div>
+          <div class="course-meta">3 ай · Бастапқы</div>
+          <p class="muted">Грамматика, орфография, әдебиет — ҰБТ-ға толық дайындық.</p>
+          <div style="margin-top:12px" class="course-footer">
+            <div class="pill">Оффлайн</div>
+            <a href="#contacts" class="cta" style="background:transparent;color:var(--accent);box-shadow:none;padding:6px 8px;border-radius:8px;border:1px solid rgba(244,123,32,0.12)">Жазылу</a>
+          </div>
+        </div>
+        
+        <div class="course-card">
+          <div class="course-title">Ozbek tili</div>
+          <div class="course-meta">3 ай · Бастапқы/Орташа</div>
+          <p class="muted">Тілдік дағдыларды жетілдіру және емтихандарға дайындық.</p>
+          <div style="margin-top:12px" class="course-footer">
+            <div class="pill">Онлайн</div>
+            <a href="#contacts" class="cta" style="background:transparent;color:var(--accent);box-shadow:none;padding:6px 8px;border-radius:8px;border:1px solid rgba(244,123,32,0.12)">Жазылу</a>
+          </div>
+        </div>
+        
+        <div class="course-card">
+          <div class="course-title">Angliskiy til</div>
+          <div class="course-meta">4 ай · Барлық деңгей</div>
+          <p class="muted">Speaking, Grammar, Listening — IELTS дайындық.</p>
+          <div style="margin-top:12px" class="course-footer">
+            <div class="pill">Комбинир.</div>
+            <a href="#contacts" class="cta" style="background:transparent;color:var(--accent);box-shadow:none;padding:6px 8px;border-radius:8px;border:1px solid rgba(244,123,32,0.12)">Жазылу</a>
+          </div>
+        </div>
+        
+        <div class="course-card">
+          <div class="course-title">Qaraqalpaqstan tariyxi</div>
+          <div class="course-meta">3 ай · Орташа</div>
+          <p class="muted">Ежелгі дәуірден қазіргі кезеңге дейінгі толық курс.</p>
+          <div style="margin-top:12px" class="course-footer">
+            <div class="pill">Оффлайн</div>
+            <a href="#contacts" class="cta" style="background:transparent;color:var(--accent);box-shadow:none;padding:6px 8px;border-radius:8px;border:1px solid rgba(244,123,32,0.12)">Жазылу</a>
+          </div>
+        </div>
+        
+        <div class="course-card">
+          <div class="course-title">Informatika</div>
+          <div class="course-meta">3 ай · Бастапқы/Орташа</div>
+          <p class="muted">Алгоритмдер, бағдарламалау негіздері — ҰБТ дайындық.</p>
+          <div style="margin-top:12px" class="course-footer">
+            <div class="pill">Онлайн</div>
+            <a href="#contacts" class="cta" style="background:transparent;color:var(--accent);box-shadow:none;padding:6px 8px;border-radius:8px;border:1px solid rgba(244,123,32,0.12)">Жазылу</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEACHERS -->
+  <section id="teachers" class="section">
+    <div class="wrap">
+      <h2>Ustazlar / Teachers</h2>
+      <p class="lead">Бізбен тәжірибесі бар, практик мамандар жұмыс істейді.</p>
+
+      <div class="teachers-grid" style="margin-top:18px">
+        <div class="teacher fade-in">
+          <div class="avatar">АС</div>
+          <div class="t-name">Айгүл С.</div>
+          <div class="t-sub">Математика · 6 жыл</div>
+        </div>
+        <div class="teacher fade-in">
+          <div class="avatar">ЕР</div>
+          <div class="t-name">Ерлан Т.</div>
+          <div class="t-sub">Физика · 8 жыл</div>
+        </div>
+        <div class="teacher fade-in">
+          <div class="avatar">НК</div>
+          <div class="t-name">Нұрлан К.</div>
+          <div class="t-sub">Қарақалпақ тілі · 5 жыл</div>
+        </div>
+        <div class="teacher fade-in">
+          <div class="avatar">ГА</div>
+          <div class="t-name">Гүлнара А.</div>
+          <div class="t-sub">Өзбек тілі · 4 жыл</div>
+        </div>
+        <div class="teacher fade-in">
+          <div class="avatar">ДМ</div>
+          <div class="t-name">Динара М.</div>
+          <div class="t-sub">Ағылшын тілі · 7 жыл</div>
+        </div>
+        <div class="teacher fade-in">
+          <div class="avatar">АБ</div>
+          <div class="t-name">Азамат Б.</div>
+          <div class="t-sub">Тарих · 6 жыл</div>
+        </div>
+        <div class="teacher fade-in">
+          <div class="avatar">ЖК</div>
+          <div class="t-name">Жанна К.</div>
+          <div class="t-sub">Информатика · 5 жыл</div>
+        </div>
+        <div class="teacher fade-in">
+          <div class="avatar">ЗТ</div>
+          <div class="t-name">Зейнур Т.</div>
+          <div class="t-sub">Химия · 7 жыл</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="section" style="background:#f3f4ff">
+    <div class="wrap">
+      <h2>Student pikirleri / Pikirler</h2>
+      <p class="lead">Haqiyqiy pikirler — biz korsetken natiyjelerdin daleli.</p>
+
+      <div class="reviews" style="margin-top:18px">
+        <div class="review fade-in">
+          <div class="stars">★★★★★</div>
+          <div style="font-weight:700">Алия</div>
+          <div class="muted" style="margin-top:8px">"Математика курсы өте пайдалы болды — ҰБТ-да жоғары балл алдым!"</div>
+        </div>
+        <div class="review fade-in">
+          <div class="stars">★★★★★</div>
+          <div style="font-weight:700">Нұрлан</div>
+          <div class="muted" style="margin-top:8px">"Мұғалімдер өте жақсы түсіндіреді, барлық сұрақтарға жауап береді."</div>
+        </div>
+        <div class="review fade-in">
+          <div class="stars">★★★★☆</div>
+          <div style="font-weight:700">Гүлнар</div>
+          <div class="muted" style="margin-top:8px">"Онлайн формат ыңғайлы, қалаған уақытта оқуға болады."</div>
+        </div>
+        <div class="review fade-in">
+          <div class="stars">★★★★★</div>
+          <div style="font-weight:700">Ерболат</div>
+          <div class="muted" style="margin-top:8px">"Физикадан түсінбеген тақырыптарымды толық меңгердім!"</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="section">
+    <div class="wrap">
+      <h2>Процесс / Қалай өтеді</h2>
+      <p class="lead">Оқу процесі бірнеше қадамнан тұрады: тіркелу → бағалау → оқу → жоба → сертификат.</p>
+
+      <div class="process-grid" style="margin-top:18px">
+        <div class="step fade-in">
+          <div class="num">1</div>
+          <div style="font-weight:700;margin-top:8px">Тіркелу</div>
+          <div class="muted" style="margin-top:6px">Қысқа форма арқылы өтесіз</div>
+        </div>
+        <div class="step fade-in">
+          <div class="num">2</div>
+          <div style="font-weight:700;margin-top:8px">Бағалау</div>
+          <div class="muted" style="margin-top:6px">Алғашқы тест және кеңес</div>
+        </div>
+        <div class="step fade-in">
+          <div class="num">3</div>
+          <div style="font-weight:700;margin-top:8px">Оқу</div>
+          <div class="muted" style="margin-top:6px">Жобалар және практикалық тапсырмалар</div>
+        </div>
+        <div class="step fade-in">
+          <div class="num">4</div>
+          <div style="font-weight:700;margin-top:8px">Нәтиже</div>
+          <div class="muted" style="margin-top:6px">Сертификат және жұмысқа көмек</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results" class="section" style="background:linear-gradient(90deg,var(--blue),var(--purple));color:var(--light-text)">
+    <div class="wrap">
+      <h2 style="color:var(--light-text)">Нәтижелер / Results</h2>
+      <p class="lead" style="color:rgba(234,234,234,0.9)">Біздің түлектердің статистикасы — нақты көрсеткіштер.</p>
+
+      <div class="results" style="margin-top:18px">
+        <div class="result-card fade-in">
+          <div class="big" data-target="520">0</div>
+          <div>Оқушылар</div>
+        </div>
+        <div class="result-card fade-in" style="background:linear-gradient(90deg,#ff8a4b,#f47b20)">
+          <div class="big" data-target="95">0</div>
+          <div>% ҰБТ-да жоғары балл</div>
+        </div>
+        <div class="result-card fade-in">
+          <div class="big" data-target="120">0</div>
+          <div>Аяқтаған курстар</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & FAQ -->
+  <section id="extras" class="section">
+    <div class="wrap" style="display:grid;grid-template-columns:1fr 420px;gap:18px;align-items:start">
+      <div>
+        <h2>Орналасуы / Мекенжай</h2>
+        <p class="lead">Біздің офис: Нөкіс қаласы — келуге немесе қоңырау шалуға болады.</p>
+        <div class="location" style="margin-top:12px">
+          <iframe src="https://maps.google.com/maps?q=Nukus,Uzbekistan&t=&z=13&ie=UTF8&iwloc=&output=embed" style="width:100%;height:260px;border:0;"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <h2>Сұрақ — жауап / FAQ</h2>
+        <div class="faq" style="margin-top:12px">
+          <details class="q fade-in">
+            <summary>Курстар қанша уақытқа созылады?</summary>
+            <div style="margin-top:8px" class="muted">Курстың ұзақтығы бағытына байланысты 3 айдан 4 айға дейін.</div>
+          </details>
+
+          <details class="q fade-in">
+            <summary>ҰБТ-ға дайындық бар ма?</summary>
+            <div style="margin-top:8px" class="muted">Иә — барлық курстарымыз ҰБТ форматына сәйкес құрылған.</div>
+          </details>
+
+          <details class="q fade-in">
+            <summary>Онлайн форматта қатысу мүмкін бе?</summary>
+            <div style="margin-top:8px" class="muted">Иә, курстардың көпшілігі онлайн және офлайн форматта өткізіледі.</div>
+          </details>
+
+          <details class="q fade-in">
+            <summary>Төлем қалай жүргізіледі?</summary>
+            <div style="margin-top:8px" class="muted">Төлемді бөліп төлеуге болады — ай сайын немесе бір жолғы.</div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contacts" class="section" style="background:linear-gradient(180deg,#fff,#fbfbff)">
+    <div class="wrap">
+      <h2>Байланыс / Contacts</h2>
+      <p class="lead">Сұрақтарыңыз бар ма? Форманы толтырыңыз немесе бізге қоңырау шалыңыз.</p>
+
+      <div class="contact-grid" style="margin-top:18px">
+        <div class="form fade-in">
+          <div class="field">
+            <label>Аты-жөні</label>
+            <input id="fname" placeholder="Аты-жөні" required>
+          </div>
+          <div class="field">
+            <label>Телефон</label>
+            <input id="phone" placeholder="+998 xx xxx xxxx" required>
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input id="email" type="email" placeholder="name@example.com" required>
+          </div>
+          <div class="field">
+            <label>Хабарлама</label>
+            <textarea id="msg" rows="5" placeholder="Сұрағыңызды жазыңыз..."></textarea>
+          </div>
+          <button id="sendBtn">Жіберу</button>
+        </div>
+
+        <div class="fade-in">
+          <h3 style="margin-top:0">Бізге келіңіз</h3>
+          <p class="muted">Жұмыс уақыты: Дс-Сб 09:00 — 18:00</p>
+          <p style="margin-top:12px"><strong>Телефон:</strong> +998 61 223-45-67</p>
+          <p style="margin-top:6px"><strong>Email:</strong> info@applikata.uz</p>
+
+          <div style="margin-top:18px">
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <a class="social" href="https://instagram.com/applikata" target="_blank" aria-label="instagram">Instagram</a>
+              <a class="social" href="https://t.me/applikata" target="_blank" aria-label="telegram">Telegram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>© 2025 Applikata Oqiw Orayi. Барлық құқықтар қорғалған.</div>
+      <div class="muted">Жасаған: Заманбек</div>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank" aria-label="facebook">FB</a>
+        <a href="https://instagram.com/applikata" target="_blank" aria-label="instagram">IG</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
